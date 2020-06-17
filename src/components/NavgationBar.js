@@ -70,7 +70,7 @@ export default class NavigationBar extends Component{
     
                         </Nav>
                       
-                      
+                        <Link to={"profile"} className="nav-link" >ADMIN</Link>
                                 <Link to={"profile"} className="nav-link" >{sessionStorage.getItem("username")}</Link>
                                 <Button  className="mr-sm-2" onClick={ () => this.doLogout() } >Logout</Button>
                       
@@ -100,7 +100,7 @@ export default class NavigationBar extends Component{
     
                         </Nav>
                       
-                      
+                             
                                 <Link to={"profile"} className="nav-link" >{sessionStorage.getItem("username")}</Link>
                                 <Button  className="mr-sm-2" onClick={ () => this.doLogout() } >Logout</Button>
                       
